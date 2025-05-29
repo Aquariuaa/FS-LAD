@@ -1,25 +1,24 @@
-# OMLog: Online Log Anomaly Detection for Evolving Systems with Meta-learning
+# FSLog: Adversarial Margin for Cross-System Few-shot Log Anomaly Detection
 
 ## Pre-requisites:
 
 The experiment is based on a Pytorch implementation running in the following environment
 
 ```
- conda install --yes --file requirements.txt
+torch==2.2.0.dev20231016+cu121
+torchvision==0.17.0.dev20231016+cu121
+python-dateutil==2.9.0.post0
+pytorch-lightning==2.5.1.post0
+numpy==1.24.1
+pandas==2.2.1
 ```
 ## Dataset
-Our approach follows the work in LogOnline. Therefore, all experiments were performed on two public log datasets, HDFS and BGL. 
-where HDFS is a stable dataset, and BGL is a evolving dataset. However, due to Github's settings for space, we were unable to upload these two datasets. 
-The open source datasets and their structured versions are available in [LogADEmpirical](https://github.com/LogIntelligence/LogADEmpirical/tree/icse2022). The downloaded files should be placed in the ‘/data’ folder in a directory named after the dataset.
-For example, the parsed HDFS file ‘HDFS.log_structured.csv’ should be placed under ‘/data/HDFS/HDFS.log-structured.csv’.
+Our approach follows the work in LogRobust and LogADEmpirical. Therefore, all experiments were performed on three public log datasets, HDFS, BGL and TBird. 
+The open source datasets and their structured versions are available in [LogADEmpirical](https://github.com/LogIntelligence/LogADEmpirical/tree/icse2022). 
 
 ## Log Parsing
+The log parser used by LogOnline is [Spell](https://github.com/pfeak/spell)
 
-The log parser used by LogOnline is [Spine](https://github.com/pfeak/spell), another work of the team, 
-but details of Spine's implementation are missing. 
-In addition, the paper proposing Spine does not open source the parser. 
-Since log parsing is not the focus of our research. 
-Therefore, OMLog makes use of the classic [Spell]() parser instead and places the source code of the implementation in src/spell.py.
 
 ## Pre-training Model
 The normality detection model is derived from LogOnline, and we re-trained the normality detection model based on the Spell parsed dataset according to its source code. 
