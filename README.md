@@ -13,7 +13,7 @@ numpy==1.24.1
 pandas==2.2.1
 ```
 
-We provide code for two core innovative components of FSLog: MITNet and AMCS Loss Function. Our approach follows the work in LibFewShot and LogADEmpirical. Therefore, all experiments were performed on three public log datasets, HDFS, BGL and TBird. 
+We provide code for two core innovative components of FSLog: MITNet and AMCS Loss Function. Our approach follows the work in LibFewShot and LogADEmpirical. All experiments were performed on three public log datasets, HDFS, BGL and TBird. 
 The open source datasets and their structured versions are available in [LogADEmpirical](https://github.com/LogIntelligence/LogADEmpirical/tree/icse2022). 
 
 ## Log Parsing
