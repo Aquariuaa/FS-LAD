@@ -13,7 +13,7 @@ numpy==1.24.1
 pandas==2.2.1
 ```
 ## Dataset
-Our approach follows the work in LogRobust and LogADEmpirical. Therefore, all experiments were performed on three public log datasets, HDFS, BGL and TBird. 
+Our approach follows the work in LibFewShot and LogADEmpirical. Therefore, all experiments were performed on three public log datasets, HDFS, BGL and TBird. 
 The open source datasets and their structured versions are available in [LogADEmpirical](https://github.com/LogIntelligence/LogADEmpirical/tree/icse2022). 
 
 ## Log Parsing
@@ -31,5 +31,5 @@ LogADEmpirical: [Code](https://github.com/LogIntelligence/LogADEmpirical/tree/ic
 LibFewShot: [Code](https://github.com/rl-vig/libfewshot)
 
 ## Acknowledgements
-We acknowledge the work done by the LogOnline approach, and our code is implementation based on the [LogOnline](https://github.com/xUhEngwAng/LogOnline) .
+We acknowledge the work done by the LibFewShot, and our code is implementation based on the [LibFewShot](https://github.com/rl-vig/libfewshot) .
 
